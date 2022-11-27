@@ -1,0 +1,49 @@
+/* Футер */
+
+.footer-nav {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--second-section-color);
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer__container {
+  margin-right: 70px;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+
+  &--end {
+    color: var(--main-white-color);
+  }
+}
+
+.address__list {
+  line-height: 1.71;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.address__link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--footer-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__link--address {
+  color: var(--main-white-color);
+}
