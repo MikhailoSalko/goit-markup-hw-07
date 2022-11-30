@@ -115,9 +115,6 @@ address {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-  color: var(--logo-header-color);
-}
-.logo--accent {
   color: var(--accent-color);
 }
 
@@ -164,8 +161,6 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--customers-color);
-  background-color: transparent;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -349,14 +344,8 @@ address {
   border-color: var(--accent-color);
 }
 
-.modal__wrapper--checkbox {
+.modal__container--checkbox {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 30px;
   gap: 7px;
 }
@@ -414,6 +403,9 @@ address {
 
 .header__logo {
   margin-right: 93px;
+}
+.header__logo--end {
+  color: var(--logo-header-color);
 }
 
 .site-nav {
@@ -583,6 +575,10 @@ address {
   color: var(--main-white-color);
 }
 
+.socials__link--work {
+  color: var(--customers-color);
+}
+
 /* Наша команда */
 .team {
   background-color: var(--team-section-color);
@@ -660,21 +656,19 @@ address {
 }
 
 /* Футер */
-.footer-nav {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--second-section-color);
 }
-.footer-nav__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+
+.footer__container {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
 }
 
-.footer__container {
+.footer-nav__container {
   margin-right: 70px;
 }
 
@@ -685,26 +679,26 @@ address {
   color: var(--main-white-color);
 }
 
-.address__list {
+.footer-nav__list {
   line-height: 1.71;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address__item:not(:last-child) {
+.footer-nav__item:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.address__link {
+.footer-nav__link {
+  color: var(--footer-text-color);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--footer-text-color);
 }
-.address__link:hover, .address__link:focus {
+.footer-nav__link:hover, .footer-nav__link:focus {
   color: var(--accent-color);
 }
 
-.address__link--address {
+.footer-nav__link--address {
   color: var(--main-white-color);
 }
 
@@ -719,12 +713,10 @@ address {
 .socials__link--footer {
   color: var(--main-white-color);
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Підписка */
-.subscription {
+.subscription__form {
   margin-left: auto;
 }
 

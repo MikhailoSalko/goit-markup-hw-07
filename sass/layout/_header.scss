@@ -4,4 +4,8 @@
 
 .header__logo {
   margin-right: 93px;
+
+  &--end {
+    color: var(--logo-header-color);
+  }
 }
